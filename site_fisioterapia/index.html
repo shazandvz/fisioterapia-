@@ -1,0 +1,135 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dr. Lucas Menezes - Início</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px white;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        .biografia {
+            margin-bottom: 40px;
+        }
+
+        .biografia-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .biografia-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .biografia-image img {
+            width: 280px;
+            border-radius: 12px;
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo para o rodapé */
+.footer {
+    background-color: #282828; /* Fundo escuro para destacar */
+    color: white; /* Texto branco para contraste */
+    padding: 30px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Centralizar o conteúdo */
+    font-size: 14px; /* Tamanho de fonte adequado */
+}
+
+.footer .footer-info p {
+    margin: 5px 0; /* Espaçamento entre as informações */
+}
+
+.footer .footer-info a {
+    color: #4CAF50; /* Cor do link (verde) */
+    text-decoration: none; /* Remover sublinhado */
+    font-weight: bold; /* Tornar o link mais destacado */
+}
+
+.footer .footer-info a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo à Clínica Dr. Lucas Menezes</h1>
+
+        <section class="biografia">
+            <h2>Sobre o Dr. Lucas Menezes</h2>
+            <div class="biografia-content">
+                <div class="biografia-text">
+                    <p>Dr. Lucas Menezes é um renomado ortopedista e fisioterapeuta esportivo com mais de 10 anos de experiência no tratamento de lesões esportivas e reabilitação.</p>
+                    <p>Com uma abordagem personalizada, ele ajuda seus pacientes a se recuperarem de lesões com o objetivo de proporcionar uma recuperação eficiente e rápida.</p>
+                    <ul>
+                        <li>Mais de 10 anos de experiência em ortopedia e fisioterapia esportiva</li>
+                        <li>Tratamentos personalizados e modernos</li>
+                        <li>Especialista em recuperação de lesões esportivas</li>
+                    </ul>
+                </div>
+                <div class="biografia-image">
+                    <img src="imagem/imagem.png" alt="Dr. Lucas Menezes">
+                </div>
+            </div>
+        </section>
+
+        <div class="actions">
+            <a href="register.php" class="btn">Cadastre-se</a>
+            <a href="login.php" class="btn">Entrar</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Clínica Dr. Lucas Menezes - Todos os direitos reservados<br>
+        Rua Jean Gonzalez, 51 - Jardim Santos Dumont, São Paulo - SP, 05367-220, Brasil<br>
+    </footer>
+</body>
+</html>
